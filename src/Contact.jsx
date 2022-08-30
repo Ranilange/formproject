@@ -10,7 +10,7 @@ const Contact = () => {
       });
     return (
         <div>
-            <h1>login</h1>
+            <h1>Contact</h1>
             <Formik
                 initialValues={{ firstname: "", reason: "" }}
                 onSubmit={(values) => alert(JSON.stringify(values))}
@@ -63,7 +63,7 @@ const Contact = () => {
                             {errors.hearFrom && touched.hearFrom && errors.hearFrom}
                         </p>
                         
-                        <button type="submit">login</button>
+                        <button type="submit">submit</button>
                     </form>
                 )}
             </Formik>
